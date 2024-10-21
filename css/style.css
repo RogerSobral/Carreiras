@@ -1,0 +1,73 @@
+:root{
+    --color-primary: #242614;
+    --color-secundary: #41591C;
+    --color-background: #F2B705;
+    --color-white: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Krona One';
+    color: var(--color-primary);
+}
+
+body{
+    background-color: var(--color-primary);
+    height: 100vh;
+    width: 100%;
+}
+
+.caixa{
+    height: 80%;
+    width: 80%;
+    background-color: var(--color-background);
+}
+
+#logo{
+    border-radius: 3em;
+    border: 3px solid var(--color-primary);
+}
+
+input, .btn_entrar{
+    border: none;
+    border-radius: 2px;
+}
+
+input{
+    height: 2em;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.text_senha{
+    align-self: flex-end;
+    font-size: 0.6em;
+    text-decoration: underline;
+}
+
+.btn_entrar{
+    background-color: var(--color-secundary);
+    color: var(--color-white);
+    height: 15%;
+}
+
+#text_cadastrar {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    #text_login{
+        order: 2;
+    }
+
+    #logo{
+        order: 1;
+    }
+}
