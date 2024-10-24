@@ -23,16 +23,17 @@ body{
     height: 80%;
     width: 80%;
     background-color: var(--color-background);
+    border-radius: 0.4em;
 }
 
-#logo{
+.logo{
     border-radius: 3em;
     border: 3px solid var(--color-primary);
 }
 
-input, .btn_entrar{
+input, .btn_entrar, .btn_cadastrar{
     border: none;
-    border-radius: 2px;
+    border-radius: 0.2em;
 }
 
 input{
@@ -50,7 +51,7 @@ a{
     text-decoration: underline;
 }
 
-.btn_entrar{
+.btn_entrar, .btn_cadastrar{
     background-color: var(--color-secundary);
     color: var(--color-white);
     height: 15%;
@@ -60,6 +61,18 @@ a{
     display: block;
     width: 100%;
     text-align: center;
+}
+
+.barra_lateral{
+    background-color: var(--color-background);
+}
+
+ul {
+    list-style-type: "\2795";
+}
+
+li:nth-child(5){
+    list-style-type: disc;
 }
 
 @media (min-width: 992px) {
