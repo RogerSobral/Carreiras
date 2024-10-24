@@ -10,11 +10,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Krona One';
-    color: var(--color-primary);
+    color: var(--color-white);
 }
 
 body{
-    background-color: var(--color-primary);
+    background-image: url('../assets/img_fundo.png');
+    background-size: cover;
     height: 100vh;
     width: 100%;
 }
@@ -27,8 +28,11 @@ body{
 }
 
 .logo{
-    border-radius: 3em;
-    border: 3px solid var(--color-primary);
+    width: 8em;
+}
+
+.logo_clicar{
+    cursor: pointer;
 }
 
 input, .btn_entrar, .btn_cadastrar{
@@ -68,11 +72,42 @@ a{
 }
 
 ul {
-    list-style-type: "\2795";
+    list-style-type: none;
 }
 
-li:nth-child(5){
-    list-style-type: disc;
+.navgator{
+    background-color: var(--color-secundary);
+}
+
+label[data-descr] {
+    position: relative;
+    cursor: help;
+}
+
+label[data-descr]:hover::after,
+label[data-descr]:focus::after {
+    content: attr(data-descr);
+    position: absolute;
+    left: 0;
+    top: 24px;
+    min-width: 200px;
+    border-radius: 10px;
+    color: var(--color-primary);
+    background-color: var(--color-background);
+    padding: 12px;
+    font-size: 14px;
+    z-index: 1;
+}
+
+.btn_adicionar{
+    border: none;
+    border-radius: 50%;
+    font-size: 5em;
+    background-color: transparent;
+}
+
+.simbolo_adicionar{
+    color: var(--color-background);
 }
 
 @media (min-width: 992px) {
