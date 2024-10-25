@@ -35,7 +35,7 @@ main {
 
 
 .logo{
-    width: 8em;
+    width: 5em;
 }
 
 .logo_clicar{
@@ -65,7 +65,7 @@ a{
 .btn_entrar{
     background-color: var(--color-primary);
     color: var(--color-white);
-    height: 15%;
+    height: 100%;
 }
 
 .btn_entrar:hover{
@@ -136,6 +136,13 @@ label[data-descr]:focus::after {
 
 .simbolo_adicionar{
     color: var(--color-background);
+}
+
+table, th, td{
+    border: 3px solid var(--color-primary);
+    border-collapse: collapse;
+    background-color: var(--color-background);
+    color: var(--color-primary);
 }
 
 @media (min-width: 992px) {
