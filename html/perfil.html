@@ -59,19 +59,19 @@
     <main>
         <!-- Atualizar dados -->
         <form class="d-flex flex-column flex-xl-row justify-content-around align-items-center py-5">
-            <div class="mb-3">
+            <div class="mb-3 mb-xl-0">
                 <label for="exampleInputNome" class="form-label">Nome</label>
                 <input type="text" class="form-control" id="exampleInputNome" aria-describedby="emailHelp">
             </div>
-            <div class="mb-3">
+            <div class="mb-3 mb-xl-0">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
                 <input type="password" class="form-control" id="exampleInputPassword1">
             </div>
-            <div class="mb-3">
+            <div class="mb-3 mb-xl-0">
                 <label for="exampleInputCep" class="form-label">CEP</label>
                 <input type="text" class="form-control" id="exampleInputCep" aria-describedby="emailHelp">
             </div>
-            <div class="mb-3">
+            <div class="mb-3 mb-xl-0">
                 <label for="exampleInputCod" class="form-label" data-descr="Compartilhe esse código para se tornar colaborador de alguém.">COD <i class="bi bi-question-circle-fill"></i></label>
                 <input type="text" class="form-control" id="exampleInputCod" aria-describedby="emailHelp">
             </div>
@@ -85,16 +85,33 @@
                 <button type="button" class="btn_adicionar"><i class="bi bi-plus-circle-fill simbolo_adicionar"></i></button>
                 
                 <div>
-                    <label for="exampleInputBuscar" class="form-label">Buscar</label>
-                    <input type="text" class="form-control" id="exampleInputBuscar" aria-describedby="emailHelp">
+                    <label for="exampleInputBuscar" class="form-label">Buscar <i class="bi bi-search"></i></label>
+                    <input type="search" class="form-control" id="exampleInputBuscar" aria-describedby="emailHelp">
                 </div>
             </div>
 
             <!-- Tabela de colaboradores -->
             <table class="container text-center">
                 <thead>
-                    <th>Nome do colaborador</th>
+                    <tr>
+                        <th class="p-2">Nome</th>
+                        <th class="p-2">Cidade</th>
+                    </tr>
                 </thead>
+                <tbody>
+                    <tr>
+                        <td class="p-2">Eduardo</td>
+                        <td class="p-2">Arujá</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2">Rogério</td>
+                        <td class="p-2">Suzano</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2">André</td>
+                        <td class="p-2">São Paulo</td>
+                    </tr>
+                </tbody>
             </table>
         </fieldset>
     </main>
