@@ -14,10 +14,16 @@
 }
 
 body{
-    background-image: url('../assets/img_fundo.png');
+    background-image: url('../assets/img_fundo.png');   
     background-size: cover;
     height: 100vh;
     width: 100%;
+}
+
+main {
+    background-image: url(/assets/background.png);
+    background-size:contain;
+    background-repeat: no-repeat;
 }
 
 .caixa{
@@ -26,6 +32,7 @@ body{
     background-color: var(--color-secundary);
     border-radius: 0.4em;
 }
+
 
 .logo{
     width: 8em;
@@ -55,9 +62,15 @@ a{
     text-decoration: underline;
 }
 
-.btn_entrar, .btn_cadastrar{
-    background-color: var(--color-secundary);
+.btn_entrar{
+    background-color: var(--color-primary);
     color: var(--color-white);
+    height: 15%;
+}
+
+.btn_entrar:hover{
+    background-color: var(--color-white);
+    color: var(--color-primary);
     height: 15%;
 }
 
@@ -106,6 +119,21 @@ label[data-descr]:focus::after {
     background-color: transparent;
 }
 
+.text_senha {
+    color: var(--color-white);
+}
+
+.text_senha:hover {
+    color: var(--color-primary);
+}
+
+.texto_casdastrar {
+    color: var(--color-white);
+}
+.texto_casdastrar:hover {
+    color: var(--color-primary);
+}
+
 .simbolo_adicionar{
     color: var(--color-background);
 }
@@ -119,3 +147,20 @@ label[data-descr]:focus::after {
         order: 1;
     }
 }
+
+.caixaIcon {
+    animation: fadeInLeft 3s ease-in-out forwards;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0; 
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1; 
+        transform: translateX(0);
+    }
+}
+
+
