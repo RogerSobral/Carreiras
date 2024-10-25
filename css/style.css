@@ -23,7 +23,7 @@ body{
 .caixa{
     height: 80%;
     width: 80%;
-    background-color: var(--color-background);
+    background-color: var(--color-secundary);
     border-radius: 0.4em;
 }
 
