@@ -20,7 +20,7 @@ body{
     width: 100%;
 }
 
-main {
+.caixa {
     background-image: url(/assets/background.png);
     background-size:contain;
     background-repeat: no-repeat;
