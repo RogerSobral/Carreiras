@@ -1,5 +1,6 @@
 :root{
     --color-primary: #242614;
+    --color-primary-hover: #3a3d20;
     --color-secundary: #41591C;
     --color-background: #F2B705;
     --color-white: #fff;
@@ -69,8 +70,7 @@ a{
 }
 
 .btn_entrar:hover{
-    background-color: var(--color-white);
-    color: var(--color-primary);
+    background-color: var(--color-primary-hover);
     height: 15%;
 }
 
@@ -170,4 +170,6 @@ table, th, td{
     }
 }
 
-
+.modal_fundo{
+    background-color: var(--color-secundary);
+}
