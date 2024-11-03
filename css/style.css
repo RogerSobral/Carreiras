@@ -21,12 +21,6 @@ body{
     width: 100%;
 }
 
-.caixa {
-    background-image: url(/assets/background.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-}
-
 .caixa{
     height: 80%;
     width: 80%;
@@ -34,13 +28,14 @@ body{
     border-radius: 0.4em;
 }
 
-
-.logo{
-    width: 5em;
+.login_fundo {
+    background-image: url(/assets/background.png);
+    background-size:contain;
+    background-repeat: no-repeat;
 }
 
-.logo_clicar{
-    cursor: pointer;
+.caixaIcon {
+    animation: fadeInLeft 3s ease-in-out forwards;
 }
 
 input, .btn_entrar, .btn_cadastrar{
@@ -61,6 +56,11 @@ a{
     align-self: flex-end;
     font-size: 0.6em;
     text-decoration: underline;
+    color: var(--color-white);
+}
+
+.text_senha:hover {
+    color: var(--color-primary);
 }
 
 .btn_entrar{
@@ -80,16 +80,28 @@ a{
     text-align: center;
 }
 
-.barra_lateral{
-    background-color: var(--color-background);
+.texto_casdastrar {
+    color: var(--color-white);
 }
 
-ul {
-    list-style-type: none;
+.texto_casdastrar:hover {
+    color: var(--color-primary);
+}
+
+.logo{
+    width: 5em;
+}
+
+.logo_clicar{
+    cursor: pointer;
 }
 
 .navgator{
     background-color: var(--color-secundary);
+}
+
+ul {
+    list-style-type: none;
 }
 
 label[data-descr] {
@@ -119,23 +131,12 @@ label[data-descr]:focus::after {
     background-color: transparent;
 }
 
-.text_senha {
-    color: var(--color-white);
-}
-
-.text_senha:hover {
-    color: var(--color-primary);
-}
-
-.texto_casdastrar {
-    color: var(--color-white);
-}
-.texto_casdastrar:hover {
-    color: var(--color-primary);
-}
-
 .simbolo_adicionar{
     color: var(--color-background);
+}
+
+.modal_fundo{
+    background-color: var(--color-secundary);
 }
 
 table, th, td{
@@ -143,20 +144,6 @@ table, th, td{
     border-collapse: collapse;
     background-color: var(--color-background);
     color: var(--color-primary);
-}
-
-@media (min-width: 992px) {
-    #text_login{
-        order: 2;
-    }
-
-    #logo{
-        order: 1;
-    }
-}
-
-.caixaIcon {
-    animation: fadeInLeft 3s ease-in-out forwards;
 }
 
 @keyframes fadeInLeft {
@@ -170,6 +157,12 @@ table, th, td{
     }
 }
 
-.modal_fundo{
-    background-color: var(--color-secundary);
+@media (min-width: 992px) {
+    #text_login{
+        order: 2;
+    }
+
+    #logo{
+        order: 1;
+    }
 }
