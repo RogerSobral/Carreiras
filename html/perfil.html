@@ -26,7 +26,7 @@
 </head>
 <body>
     <header>
-        <nav class="d-flex justify-content-around align-items-center py-3">
+        <nav class="container d-flex justify-content-around align-items-center py-3">
             <img src="../assets/logo.png" alt="logo do scenepig" class="logo logo_clicar" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
                 
             <!-- Navegação lateral -->
@@ -61,28 +61,28 @@
         <form class="d-flex flex-column flex-xl-row justify-content-around align-items-center py-5">
             <div class="mb-3 mb-xl-0">
                 <label for="exampleInputNome" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="exampleInputNome" aria-describedby="emailHelp">
+                <input type="text" class="input-fundo form-control" id="exampleInputNome" aria-describedby="emailHelp">
             </div>
             <div class="mb-3 mb-xl-0">
                 <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <input type="password" class="input-fundo form-control" id="exampleInputPassword1">
             </div>
             <div class="mb-3 mb-xl-0">
                 <label for="exampleInputCep" class="form-label">CEP</label>
-                <input type="text" class="form-control" id="exampleInputCep" aria-describedby="emailHelp">
+                <input type="text" class="input-fundo form-control" id="exampleInputCep" aria-describedby="emailHelp">
             </div>
             <div class="mb-3 mb-xl-0">
                 <label for="exampleInputCod" class="form-label" data-descr="Compartilhe esse código para se tornar colaborador de alguém.">COD <i class="bi bi-question-circle-fill"></i></label>
-                <input type="text" class="form-control" id="exampleInputCod" aria-describedby="emailHelp">
+                <input type="text" class="input-fundo form-control" id="exampleInputCod" aria-describedby="emailHelp">
             </div>
             <button type="submit" class="btn btn-primary btn_entrar">ATUALIZAR</button>
         </form>
 
         <fieldset>
-            <legend class="text-center">Colaboradores</legend>
-
+            <legend class="text-center texto_amarelo pt-5">Colaboradores</legend>
+            
             <div class="d-flex justify-content-around py-3 mb-1">
-                <button type="button" class="btn_adicionar" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-plus-circle-fill simbolo_adicionar"></i></button>
+                <button type="button" class="btn_adicionar" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-plus-circle simbolo_adicionar"></i></button>
             
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -109,31 +109,31 @@
             </div>
                 
                 <div>
-                    <label for="exampleInputBuscar" class="form-label">Buscar <i class="bi bi-search"></i></label>
-                    <input type="search" class="form-control" id="exampleInputBuscar" aria-describedby="emailHelp">
+                    <label for="exampleInputBuscar" class="form-label texto_amarelo">Buscar <i class="bi bi-search texto_amarelo"></i></label>
+                    <input type="search" class="input-fundo form-control" id="exampleInputBuscar" aria-describedby="emailHelp">
                 </div>
             </div>
 
             <!-- Tabela de colaboradores -->
-            <table class="container text-center mt-5">
+            <table class="container text-center mt-5 w-50">
                 <thead>
                     <tr>
-                        <th class="p-2">Nome</th>
-                        <th class="p-2">Cidade</th>
+                        <th class="p-2 text-center">Nome</th>
+                        <th class="p-2 text-center">Cidade</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="p-2">Eduardo</td>
-                        <td class="p-2">Arujá</td>
+                        <td class="p-2 text-center">Eduardo</td>
+                        <td class="p-2 text-center">Arujá</td>
                     </tr>
                     <tr>
-                        <td class="p-2">Rogério</td>
-                        <td class="p-2">Suzano</td>
+                        <td class="p-2 text-center">Rogério</td>
+                        <td class="p-2 text-center">Suzano</td>
                     </tr>
                     <tr>
-                        <td class="p-2">André</td>
-                        <td class="p-2">São Paulo</td>
+                        <td class="p-2 text-center">André</td>
+                        <td class="p-2 text-center">São Paulo</td>
                     </tr>
                 </tbody>
             </table>

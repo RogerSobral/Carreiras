@@ -1,8 +1,10 @@
 :root{
-    --color-primary: #242614;
-    --color-primary-hover: #3a3d20;
+    --color-primary: #1f33a6e6;
+    --color-primary-hover: rgb(46, 46, 231);
     --color-secundary: #41591C;
-    --color-background: #F2B705;
+    --color-background1: #f2b705;
+    --color-background2: #f2efbd;
+    --color-background3: #fffa9e;
     --color-white: #fff;
 }
 
@@ -15,8 +17,9 @@
 }
 
 body{
-    background-image: url('../assets/img_fundo.png');   
-    background-size: cover;
+    /* background-image: url('../assets/img_fundo.png');   
+    background-size: cover; */
+    background-color: #05004546;
     height: 100vh;
     width: 100%;
 }
@@ -43,8 +46,13 @@ input, .btn_entrar, .btn_cadastrar{
     border-radius: 0.2em;
 }
 
-input{
+.input-fundo{
     height: 2em;
+    background-color: var(--color-background2);
+}
+
+.input-fundo:focus{
+    background-color: var(--color-background2);
 }
 
 a{
@@ -66,12 +74,11 @@ a{
 .btn_entrar{
     background-color: var(--color-primary);
     color: var(--color-white);
-    height: 100%;
+    height: 15%;
 }
 
 .btn_entrar:hover{
     background-color: var(--color-primary-hover);
-    height: 15%;
 }
 
 #text_cadastrar {
@@ -86,6 +93,10 @@ a{
 
 .texto_casdastrar:hover {
     color: var(--color-primary);
+}
+
+header{
+    background-color: var(--color-primary);
 }
 
 .logo{
@@ -118,7 +129,7 @@ label[data-descr]:focus::after {
     min-width: 200px;
     border-radius: 10px;
     color: var(--color-primary);
-    background-color: var(--color-background);
+    background-color: var(--color-background1);
     padding: 12px;
     font-size: 14px;
     z-index: 1;
@@ -132,18 +143,45 @@ label[data-descr]:focus::after {
 }
 
 .simbolo_adicionar{
-    color: var(--color-background);
+    color: var(--color-background1);
 }
 
 .modal_fundo{
     background-color: var(--color-secundary);
 }
 
-table, th, td{
+/* table, th, td{
     border: 3px solid var(--color-primary);
     border-collapse: collapse;
-    background-color: var(--color-background);
+    background-color: var(--color-background1);
     color: var(--color-primary);
+} */
+
+table {
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: var(--color-primary);
+}
+th {
+    background-color: var(--color-background3);
+}
+tr {
+    background-color: var(--color-background2);
+}
+tr:nth-child(even) {
+    background-color: var(--color-background3);
+}
+tr:hover {
+    background-color: var(--color-primary);
+}
+tr:hover td{
+    color: var(--color-white);
 }
 
 @keyframes fadeInLeft {
@@ -165,4 +203,16 @@ table, th, td{
     #logo{
         order: 1;
     }
+}
+
+.texto_amarelo{
+    color: var(--color-background1);
+}
+
+fieldset{
+    background-color: var(--color-primary);
+}
+
+label, label i {
+    color: var(--color-primary);
 }
