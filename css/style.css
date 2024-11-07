@@ -1,99 +1,4 @@
-:root{
-    --color-primary: #1f33a6e6;
-    --color-primary-hover: rgb(46, 46, 231);
-    --color-secundary: #41591C;
-    --color-background1: #f2b705;
-    --color-background2: #f2efbd;
-    --color-background3: #fffa9e;
-    --color-white: #fff;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Krona One';
-    color: var(--color-white);
-}
-
-body{
-    /* background-image: url('../assets/img_fundo.png');   
-    background-size: cover; */
-    background-color: #05004546;
-    height: 100vh;
-    width: 100%;
-}
-
-.caixa{
-    height: 80%;
-    width: 80%;
-    background-color: var(--color-secundary);
-    border-radius: 0.4em;
-}
-
-.login_fundo {
-    background-image: url(/assets/background.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-}
-
-.caixaIcon {
-    animation: fadeInLeft 3s ease-in-out forwards;
-}
-
-input, .btn_entrar, .btn_cadastrar{
-    border: none;
-    border-radius: 0.2em;
-}
-
-.input-fundo{
-    height: 2em;
-    background-color: var(--color-background2);
-}
-
-.input-fundo:focus{
-    background-color: var(--color-background2);
-}
-
-a{
-    text-decoration: none;
-    color: var(--color-primary);
-}
-
-.text_senha{
-    align-self: flex-end;
-    font-size: 0.6em;
-    text-decoration: underline;
-    color: var(--color-white);
-}
-
-.text_senha:hover {
-    color: var(--color-primary);
-}
-
-.btn_entrar{
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    height: 15%;
-}
-
-.btn_entrar:hover{
-    background-color: var(--color-primary-hover);
-}
-
-#text_cadastrar {
-    display: block;
-    width: 100%;
-    text-align: center;
-}
-
-.texto_casdastrar {
-    color: var(--color-white);
-}
-
-.texto_casdastrar:hover {
-    color: var(--color-primary);
-}
+@import url('./global.css');
 
 header{
     background-color: var(--color-primary);
@@ -115,6 +20,19 @@ ul {
     list-style-type: none;
 }
 
+label, label i {
+    color: var(--color-primary);
+}
+
+.input-fundo{
+    height: 2em;
+    background-color: var(--color-background2);
+}
+
+.input-fundo:focus{
+    background-color: var(--color-background2);
+}
+
 label[data-descr] {
     position: relative;
     cursor: help;
@@ -133,6 +51,14 @@ label[data-descr]:focus::after {
     padding: 12px;
     font-size: 14px;
     z-index: 1;
+}
+
+fieldset{
+    background-color: var(--color-primary);
+}
+
+.texto_amarelo{
+    color: var(--color-background1);
 }
 
 .btn_adicionar{
@@ -184,17 +110,6 @@ tr:hover td{
     color: var(--color-white);
 }
 
-@keyframes fadeInLeft {
-    0% {
-        opacity: 0; 
-        transform: translateX(-100px);
-    }
-    100% {
-        opacity: 1; 
-        transform: translateX(0);
-    }
-}
-
 @media (min-width: 992px) {
     #text_login{
         order: 2;
@@ -203,16 +118,4 @@ tr:hover td{
     #logo{
         order: 1;
     }
-}
-
-.texto_amarelo{
-    color: var(--color-background1);
-}
-
-fieldset{
-    background-color: var(--color-primary);
-}
-
-label, label i {
-    color: var(--color-primary);
 }
