@@ -1,0 +1,98 @@
+:root{
+    --color-primary: #1f33a6e6;
+    --color-primary-hover: rgb(46, 46, 231);
+    --color-secundary: #41591C;
+    --color-background1: #f2b705;
+    --color-background2: #f2efbd;
+    --color-background3: #fffa9e;
+    --color-white: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Krona One';
+    color: var(--color-white);
+}
+
+body{
+    /* background-image: url('../assets/img_fundo.png');   
+    background-size: cover; */
+    background-color: #05004546;
+    height: 100vh;
+    width: 100%;
+}
+
+.caixa{
+    height: 80%;
+    width: 80%;
+    background-color: var(--color-secundary);
+    border-radius: 0.4em;
+}
+
+.login_fundo {
+    background-image: url(/assets/background.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+.caixaIcon {
+    animation: fadeInLeft 3s ease-in-out forwards;
+}
+
+input, .btn_entrar, .btn_cadastrar{
+    border: none;
+    border-radius: 0.2em;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.text_senha{
+    align-self: flex-end;
+    font-size: 0.6em;
+    text-decoration: underline;
+    color: var(--color-white);
+}
+
+.text_senha:hover {
+    color: var(--color-primary);
+}
+
+.btn_entrar{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    height: 15%;
+}
+
+.btn_entrar:hover{
+    background-color: var(--color-primary-hover);
+}
+
+.texto_casdastrar {
+    color: var(--color-white);
+}
+
+.texto_casdastrar:hover {
+    color: var(--color-primary);
+}
+
+#text_cadastrar {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0; 
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1; 
+        transform: translateX(0);
+    }
+}
