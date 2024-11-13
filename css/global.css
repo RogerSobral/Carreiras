@@ -6,6 +6,11 @@
     --color-background2: #f2efbd;
     --color-background3: #fffa9e;
     --color-white: #fff;
+    --color-background: #E8F1E5;
+    --color-text1: #315900;
+    --color-text2: #33386E;
+    --color-gradient1: #88C43F;
+    --color-gradient2: #0A8099;
 }
 
 *{
@@ -13,13 +18,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Krona One';
-    color: var(--color-white);
+    color: var(--color-text1);
 }
 
 body{
-    /* background-image: url('../assets/img_fundo.png');   
-    background-size: cover; */
-    background-color: #05004546;
+    background-color: var(--color-background);
     height: 100vh;
     width: 100%;
 }
@@ -27,12 +30,12 @@ body{
 .caixa{
     height: 80%;
     width: 80%;
-    background-color: var(--color-secundary);
+    background: linear-gradient(50deg, var(--color-gradient1) 0%, var(--color-gradient2) 100%);
     border-radius: 0.4em;
 }
 
 .login_fundo {
-    background-image: url(/assets/background.png);
+    /* background-image: url(/assets/background.png); */
     background-size:contain;
     background-repeat: no-repeat;
 }
@@ -63,7 +66,7 @@ a{
 }
 
 .btn_entrar{
-    background-color: var(--color-primary);
+    background-color: var(--color-text1);
     color: var(--color-white);
     height: 15%;
 }
