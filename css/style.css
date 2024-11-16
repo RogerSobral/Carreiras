@@ -56,9 +56,10 @@ label[data-descr]:focus::after {
     background-color: transparent;
 }
 
-.simbolo_adicionar{
+.simbolo_adicionar, .simbolo_menu{
     background: linear-gradient(49deg, var(--color-gradient1) 0%, var(--color-gradient2) 100%);
     color: var(--color-white);
+    border-radius: 10%;
 }
 
 .modal_fundo{
@@ -103,4 +104,30 @@ tbody tr:hover td{
     #logo{
         order: 1;
     }
+}
+
+.btn_menu_pagina{
+    background: linear-gradient(50deg, var(--color-gradient1) 0%, var(--color-gradient2) 100%);
+}
+
+.menu_fundo{
+    background-color: var(--color-background);
+}
+
+.menu_fundo_modal{
+    border: none;
+    background-color: transparent;
+}
+
+.texto-menu{
+    color: var(--color-white);
+    box-shadow: 0px 8px 21px -9px rgba(0,0,0,0.25);
+}
+
+.menu_corpo{
+    height: 60vh;
+}
+
+.btn_menu{
+    font-size: 3em;
 }

@@ -26,33 +26,41 @@
 </head>
 <body>
     <header>
-        <nav class="container d-flex justify-content-around align-items-center py-3">
-            <img src="../assets/logo.png" alt="logo do scenepig" class="logo logo_clicar" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-                
-            <!-- Navegação lateral -->
-            <div class="navgator offcanvas offcanvas-start" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title fs-1" id="staticBackdropLabel">Scenepig</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul>
-                        <a href="#"><li class="mb-3 fs-3"><i class="bi bi-person-fill"></i> Perfil</li></a>
-                        <a href="#"><li class="mb-3 fs-3"><i class="bi bi-cart3"></i> Compras</li></a>
-                        <a href="./cadastro_fornecedor.html"><li class="mb-3 fs-3"><i class="bi bi-shop"></i> Fornecedor</li></a>
-                        <a href="#"><li class="mb-3 fs-3"><i class="bi bi-list-ul"></i> Produto</li></a>
-                        <a href="../index.html"><li class="mb-3 fs-3"><i class="bi bi-box-arrow-left"></i> Sair</li></a>
-                    </ul>
+        <nav class="container d-flex justify-content-between justify-content-md-around align-items-center py-3">
+            <button class="btn btn_menu d-lg-none" data-bs-toggle="modal" data-bs-target="#exampleModalNav"><i class="bi bi-three-dots-vertical simbolo_menu"></i></button>
+            
+            <!-- Modal navegação -->
+            <div class="modal fade menu_fundo" id="exampleModalNav" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content menu_fundo_modal">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Adicionar colaborador</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex flex-column justify-content-around align-items-center menu_corpo">
+                            <button type="button" class="btn btn_menu_pagina text-uppercase texto-menu w-50">perfil</button>
+                            <button type="button" class="btn btn_menu_pagina text-uppercase texto-menu w-50">compras</button>
+                            <button type="button" class="btn btn_menu_pagina text-uppercase texto-menu w-50">fornecedores</button>
+                            <button type="button" class="btn btn_menu_pagina text-uppercase texto-menu w-50">produtos</button>
+                            <button type="button" class="btn btn_menu_pagina text-uppercase texto-menu w-50">sair</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-
+            
+            <div class="d-flex align-items-center">
+                <p class="d-lg-none">scenepig</p>
+                <img src="../assets/logo.png" alt="logo do scenepig" class="logo ms-3">
+            </div>
             
 
-            <p>sei la</p>
-            <p>carlos</p>
-            <p>jaiminho</p>
-            <p>macabro</p>
-            <p>ooooooooooh my guide</p>
+            <div class="d-none d-lg-flex">
+                <p class="text-uppercase me-5">perfil</p>
+                <p class="text-uppercase me-5">compras</p>
+                <p class="text-uppercase me-5">fornecedores</p>
+                <p class="text-uppercase me-5">produtos</p>
+                <p class="text-uppercase me-5">sair</p>
+            </div>
         </nav>
     </header>
 
@@ -82,10 +90,10 @@
             <legend class="text-center texto_amarelo pt-5">Colaboradores</legend>
             
             <div class="d-flex justify-content-around py-3 mb-1">
-                <button type="button" class="btn_adicionar" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-plus-circle simbolo_adicionar"></i></button>
+                <button type="button" class="btn_adicionar" data-bs-toggle="modal" data-bs-target="#exampleModalColaborador"><i class="bi bi-plus-circle simbolo_adicionar"></i></button>
             
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <!-- Modal add colaborador -->
+            <div class="modal fade" id="exampleModalColaborador" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content modal_fundo">
                     <div class="modal-header">
