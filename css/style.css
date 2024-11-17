@@ -14,23 +14,21 @@
 }
 
 body{
-    background-image: url('../assets/img_fundo.png');   
-    background-size: cover;
+    background: linear-gradient(250deg, #0A8099 2.1%, #88C43F 97.21%);
     height: 100vh;
     width: 100%;
+
 }
 
 main {
-    background-image: url(/assets/background.png);
-    background-size:contain;
-    background-repeat: no-repeat;
+
 }
 
 .caixa{
     height: 80%;
     width: 80%;
-    background-color: var(--color-secundary);
-    border-radius: 0.4em;
+    background-color: transparent;
+    border: none; 
 }
 
 
@@ -63,7 +61,7 @@ a{
 }
 
 .btn_entrar{
-    background-color: var(--color-primary);
+    background-color: #315900;
     color: var(--color-white);
     height: 15%;
 }
@@ -110,6 +108,7 @@ label[data-descr]:focus::after {
     padding: 12px;
     font-size: 14px;
     z-index: 1;
+
 }
 
 .btn_adicionar{
@@ -117,6 +116,14 @@ label[data-descr]:focus::after {
     border-radius: 50%;
     font-size: 5em;
     background-color: transparent;
+}
+
+.btn_cadastrar{
+    width: 440px;
+    height: 40px;
+    border-radius: 6px;
+    background: #315900;
+
 }
 
 .text_senha {
